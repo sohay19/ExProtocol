@@ -14,6 +14,8 @@
 		CFD1B41A2994D91C00167A80 /* ExProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1B4192994D91C00167A80 /* ExProtocolTests.swift */; };
 		CFD1B4242994D91C00167A80 /* ExProtocolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1B4232994D91C00167A80 /* ExProtocolUITests.swift */; };
 		CFD1B4262994D91C00167A80 /* ExProtocolUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1B4252994D91C00167A80 /* ExProtocolUITestsLaunchTests.swift */; };
+		CFD1B4332994DBF000167A80 /* GaterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1B4322994DBF000167A80 /* GaterView.swift */; };
+		CFD1B4372994E90F00167A80 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD1B4362994E90F00167A80 /* Money.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CFD1B41F2994D91C00167A80 /* ExProtocolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExProtocolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFD1B4232994D91C00167A80 /* ExProtocolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExProtocolUITests.swift; sourceTree = "<group>"; };
 		CFD1B4252994D91C00167A80 /* ExProtocolUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExProtocolUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CFD1B4322994DBF000167A80 /* GaterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaterView.swift; sourceTree = "<group>"; };
+		CFD1B4362994E90F00167A80 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +100,10 @@
 			children = (
 				CFD1B4082994D91A00167A80 /* ExProtocolApp.swift */,
 				CFD1B40A2994D91A00167A80 /* ContentView.swift */,
+				CFD1B4322994DBF000167A80 /* GaterView.swift */,
 				CFD1B40C2994D91C00167A80 /* Assets.xcassets */,
 				CFD1B40E2994D91C00167A80 /* Preview Content */,
+				CFD1B4362994E90F00167A80 /* Money.swift */,
 			);
 			path = ExProtocol;
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFD1B4372994E90F00167A80 /* Money.swift in Sources */,
 				CFD1B40B2994D91A00167A80 /* ContentView.swift in Sources */,
+				CFD1B4332994DBF000167A80 /* GaterView.swift in Sources */,
 				CFD1B4092994D91A00167A80 /* ExProtocolApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

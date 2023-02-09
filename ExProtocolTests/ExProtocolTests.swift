@@ -9,21 +9,29 @@ import XCTest
 @testable import ExProtocol
 
 final class ExProtocolTests: XCTestCase {
-
+    var divider:DivideMoney!
+    
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        try super.setUpWithError()
+        divider = DivideMoney()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        divider = nil
+        try super.tearDownWithError()
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    // 결과값 확인
+    func testCalculate() throws {
+        // given
+        let total = 50003
+        let people = 5
+        divider.enterData(moeny: total, count: people)
+        // when
+        let money = divider.calculate()
+        let other = divider.remain()
+        // then
+        XCTAssertEqual(money * people + other, total)
     }
 
     func testPerformanceExample() throws {
