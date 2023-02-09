@@ -62,6 +62,17 @@ class GatherMoney : MoneyProtocol {
     }
     
     func printResult() -> String {
-        return "총 기간 : \(count)개월\n총 금액 : \(totalMoney)원\n매 월 내야할 금액 : \(calculate())원\n1개월 추가로 내야할 금액 : \(remain())원"
+        var msg = ""
+        var result = 0
+        var other = 0
+        result = calculate()
+        msg = "총 기간 : \(count)개월\n총 금액 : \(totalMoney)원"
+        if remain() == 0 {
+            msg += "\n\(count)개월간 내야할 금액 : \(result)원"
+        } else {
+            other = result + remain()
+            msg += "\n\(count-1)개월간 내야할 금액 : \(result)원\n마지막 달에 내야할 금액 : \(other)원"
+        }
+        return msg
     }
 }
