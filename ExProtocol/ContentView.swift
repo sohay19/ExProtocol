@@ -37,7 +37,7 @@ struct ContentView: View {
                         .padding(18)
                     // 나눌 인원설정
                     Stepper(value: $people, in: 1...10) {
-                        Text(people < 2 ? "나누어야할 인원" : "\(people)")
+                        Text(people < 2 ? "나누어야할 인원" : "\(people)명")
                     }
                     .frame(width: 300)
                     // 계산버튼
